@@ -44,11 +44,14 @@ app.get('/', (req, res) => {
   //     'Gaming'
   //   ]
   // });
+
   res.render('home.hbs', {
     pageTitle: 'Home Page',
-    welcome: 'Welcome to my page'
+    welcome: 'Welcome to my page',
     //getCurrentYear: new Date().getFullYear()
   });
+
+   //res.render('index', { title: 'Hey', message: 'Hello there!' })
 });
 
 app.get('/about', (req, res) => {
